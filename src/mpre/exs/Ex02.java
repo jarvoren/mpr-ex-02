@@ -1,5 +1,8 @@
 package mpre.exs;
 
+import java.util.List;
+import java.util.ListIterator;
+
 /*
  * a) Zmodyfikuj kod „generatora liczb pierwszych” PrimesGen tak, żeby
  *    zamiast tablic wykorzystywał listy. W szczególności wynikiem metody
@@ -14,9 +17,17 @@ public class Ex02 {
 
 	public static void main(String[] args) {
 		int numOfPrimes = 20;
-		int[] primes = PrimesGen.genPrimes(numOfPrimes);
-		for (int pn : primes) {
-			System.out.printf("%d ", pn);
+		List<Integer> primes = PrimesGen.genPrimes(numOfPrimes);
+	
+		ListIterator<Integer> iterator =primes.listIterator(numOfPrimes); 
+		
+		
+		
+		for (int i=0 ; i<10 ; i++) {
+			if(iterator.hasPrevious())
+			{
+				System.out.print(" "+iterator.previous());
+			}
 		}
 		System.out.println();
 	}
