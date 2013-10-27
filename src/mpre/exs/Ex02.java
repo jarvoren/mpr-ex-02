@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.ListIterator;
 
 /*
- * a) Zmodyfikuj kod „generatora liczb pierwszych” PrimesGen tak, żeby
+ * ) Zmodyfikuj kod „generatora liczb pierwszych” PrimesGen tak, żeby
  *    zamiast tablic wykorzystywał listy. W szczególności wynikiem metody
  *    genPrimes powinna być lista liczb całkowitych.
  *    
